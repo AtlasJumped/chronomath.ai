@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Where it runs away | HMR Math</title>
+<meta name="description" content="A step-by-step map from HMR's premise to the frontier, each step colored by who stands behind it: the human, a checked AI derivation, an AI guess, or a wall.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700;750&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=6941a45c">
+<script src="site.js?v=f4d26f3d" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head"><div class="wrap">
+<a class="brand" href="index.html"><span class="lg" aria-hidden="true"></span><span>HMR Math</span></a>
+<button class="menu" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+<nav class="nav" id="nav" aria-label="Main"><a href="index.html">Home</a><a href="assumptions.html">Assumptions</a><a href="map.html" aria-current="page">Where it runs away</a><a href="open-problems.html">Open problems</a><a href="primer.html">Primer</a><a href="other-math.html">Other math</a><a href="tracker.html">Tracker</a><a href="glossary.html">Glossary</a><div class="grp"><button type="button" class="grpbtn" aria-haspopup="true" aria-expanded="false">HMR physics<span aria-hidden="true">&#9662;</span></button><div class="drop"><a href="physics.html">HMR physics: overview</a><a href="physics.html#unit">What one thought is worth</a><a href="physics.html#matches">Where HMR and physics agree</a><a href="physics.html#negative">The two negative results</a><a href="physics.html#gravity">The route to gravity</a><a href="physics.html#stress">The stress test</a><a href="tracker.html?col=physics">Physics column of the tracker</a></div></div></nav>
+</div></header>
+<main id="main">
+<div class="hero"><div class="wrap">
+<p class="eyebrow">The map</p>
+<h1>Where it runs away</h1>
+<p class="lede">HMR starts as a human idea. AI takes it further than its author can follow. This page walks from the premise to the frontier one step at a time, and colors each step by who stands behind it.</p>
+</div></div>
+
+<div class="wrap">
+<div class="note warn"><b>Not yet reviewed.</b> The colors were assigned by the AI team from the recordings and the live pages. HMR's author has not reviewed them yet. A step marked "human is sure" or "held loosely" may be moved once he has.</div>
+
+<section aria-label="Legend">
+<h2>The five colors</h2>
+<p class="prose small">Select a color to hide or show its steps.</p>
+<div class="legend">
+<button type="button" data-kind="sure" aria-pressed="true"><span class="sw sure"></span><span><b>Human is sure</b>The core that HMR commits to. <span class="n small"></span></span></button>
+<button type="button" data-kind="idea" aria-pressed="true"><span class="sw idea"></span><span><b>Human idea, held loosely</b>HMR's own direction, open to revision. <span class="n small"></span></span></button>
+<button type="button" data-kind="ai" aria-pressed="true"><span class="sw ai"></span><span><b>AI derivation, checked</b>Proved, matched to a published result, or measured in runs, and rechecked. <span class="n small"></span></span></button>
+<button type="button" data-kind="guess" aria-pressed="true"><span class="sw guess"></span><span><b>AI guessing</b>A modeling choice, a proposed definition, a reading, or a conjecture. <span class="n small"></span></span></button>
+<button type="button" data-kind="wall" aria-pressed="true"><span class="sw wall"></span><span><b>Wall</b>Nothing works here yet. <span class="n small"></span></span></button>
+</div>
+<div class="bar" id="mapbar" role="img" aria-label="Share of steps in each color"></div>
+<p class="small">The bar shows the share of steps in each color. "Checked" means the derivation was checked. It does not mean the step is true of reality: a checked derivation from a guessed definition is only as good as the definition.</p>
+</section>
+<div class="stage"><h2>The premise</h2></div>
+<p class="prose small">What HMR commits to. Everything else can change.</p>
+<ol class="steps">
+<li class="step sure"><span class="dot" aria-hidden="true"></span><div class="body"><p>A Universal Intelligence exists.</p><div class="meta"><span class="tag t-sure">human is sure</span><a href="index.html#core">Details: The core</a></div></div></li>
+<li class="step sure"><span class="dot" aria-hidden="true"></span><div class="body"><p>Before the Big Bang it was unlimited.</p><div class="meta"><span class="tag t-sure">human is sure</span><a href="index.html#core">Details: The core</a></div></div></li>
+<li class="step sure"><span class="dot" aria-hidden="true"></span><div class="body"><p>The Big Bang is the manifestation of a system in which that Universal Intelligence imposes limits on itself.</p><div class="meta"><span class="tag t-sure">human is sure</span><a href="index.html#core">Details: The core</a></div></div></li>
+<li class="step sure"><span class="dot" aria-hidden="true"></span><div class="body"><p>The question to answer is the God question: the mechanics by which an unlimited Universal Intelligence created a reality in which it is limited.</p><div class="meta"><span class="tag t-sure">human is sure</span><a href="index.html#god-question">Details: The God question</a></div></div></li>
+</ol>
+<div class="stage"><h2>The human ideas</h2></div>
+<p class="prose small">HMR's own ideas about how the premise plays out. They are good directions, held loosely, and the mathematics is free to revise them.</p>
+<ol class="steps">
+<li class="step idea"><span class="dot" aria-hidden="true"></span><div class="body"><p>To explain anything, a perspective must be established first.</p><div class="meta"><span class="tag t-idea">human idea, held loosely</span><a href="assumptions.html#claim">Details: Assumptions, part B</a></div></div></li>
+<li class="step idea"><span class="dot" aria-hidden="true"></span><div class="body"><p>The first thing UI distinguishes is me and not me.</p><div class="meta"><span class="tag t-idea">human idea, held loosely</span><a href="primer.html#numbers">Details: Primer, chapter 1</a></div></div></li>
+<li class="step idea"><span class="dot" aria-hidden="true"></span><div class="body"><p>The first unit is the distance between me and not me, and every distance since is a count of it.</p><div class="meta"><span class="tag t-idea">human idea, held loosely</span><a href="primer.html#numbers">Details: Primer, chapter 1</a></div></div></li>
+<li class="step idea"><span class="dot" aria-hidden="true"></span><div class="body"><p>The first boundary, the edge of me tested in every direction, is where &pi; comes from.</p><div class="meta"><span class="tag t-idea">human idea, held loosely</span><a href="primer.html#numbers">Details: Primer, chapter 1</a></div></div></li>
+<li class="step idea"><span class="dot" aria-hidden="true"></span><div class="body"><p>Mathematics is the ordered pattern of thought within UI, which is why nature obeys equations.</p><div class="meta"><span class="tag t-idea">human idea, held loosely</span><a href="other-math.html#hypothesis">Details: Other math</a></div></div></li>
+<li class="step idea"><span class="dot" aria-hidden="true"></span><div class="body"><p>Each kind of mathematics lines up with a kind of mental process of UI.</p><div class="meta"><span class="tag t-idea">human idea, held loosely</span><a href="other-math.html#hypothesis">Details: Other math</a></div></div></li>
+<li class="step idea"><span class="dot" aria-hidden="true"></span><div class="body"><p>Time is the sequence of UI's thought.</p><div class="meta"><span class="tag t-idea">human idea, held loosely</span><a href="primer.html#relations">Details: Primer, chapter 4</a></div></div></li>
+<li class="step idea"><span class="dot" aria-hidden="true"></span><div class="body"><p>UI likes some things and does more of them, and thoughts that belong together attract.</p><div class="meta"><span class="tag t-idea">human idea, held loosely</span><a href="primer.html#attraction">Details: Primer, chapter 8</a></div></div></li>
+<li class="step idea"><span class="dot" aria-hidden="true"></span><div class="body"><p>Gravity is reality's trend toward coherence: coherent arrangements displace distance.</p><div class="meta"><span class="tag t-idea">human idea, held loosely</span><a href="physics.html#gravity">Details: HMR physics</a></div></div></li>
+<li class="step idea"><span class="dot" aria-hidden="true"></span><div class="body"><p>A new thought comes from four sources: a stable base framework, the last few thoughts, memory, and imagination.</p><div class="meta"><span class="tag t-idea">human idea, held loosely</span><a href="open-problems.html#space">Details: Open problems</a></div></div></li>
+<li class="step idea"><span class="dot" aria-hidden="true"></span><div class="body"><p>Memory is the most stable part of the model, and changing one's mind demotes the old belief without deleting it.</p><div class="meta"><span class="tag t-idea">human idea, held loosely</span><a href="open-problems.html#memory">Details: Open problems</a></div></div></li>
+<li class="step idea"><span class="dot" aria-hidden="true"></span><div class="body"><p>The size of an idea should be measured separately from its quality.</p><div class="meta"><span class="tag t-idea">human idea, held loosely</span><a href="open-problems.html#number">Details: Open problems</a></div></div></li>
+</ol>
+<div class="handoff" id="handoff">AI takes over here. From this line down the work goes past the depth of HMR's author. The live site says so in its own words: "we let AI run with it beyond our own depth." The steps are colored by whether the AI's work was checked.</div>
+<div class="stage"><h2>Turning the idea into objects</h2></div>
+<p class="prose small">The step where words become mathematics. It is a choice, and a different choice would give a different mathematics.</p>
+<ol class="steps">
+<li class="step guess"><span class="dot" aria-hidden="true"></span><div class="body"><p>The AI team writes the idea as six assumptions: one intelligence, one element, one relation, only the pattern counts, no reaching across, and liking.</p><div class="meta"><span class="tag t-guess">AI guessing</span><a href="assumptions.html#six">Details: Assumptions, part C</a></div></div></li>
+<li class="step ai"><span class="dot" aria-hidden="true"></span><div class="body"><p>With those assumptions a state of UI is a finite set of thoughts ordered by "came before", an object mathematics already knows well: a finite partial order.</p><div class="meta"><span class="tag t-ai">AI derivation, checked</span><a href="primer.html#state">Details: Primer, chapter 2</a></div></div></li>
+<li class="step ai"><span class="dot" aria-hidden="true"></span><div class="body"><p>Every finite pattern can be grown from nothing by births, and the counts of patterns (1, 1, 2, 5, 16, 63, 318) match the known ones.</p><div class="meta"><span class="tag t-ai">AI derivation, checked</span><a href="primer.html#birth">Details: Primer, chapter 3</a></div></div></li>
+<li class="step ai"><span class="dot" aria-hidden="true"></span><div class="body"><p>Patterns combine by four operators (beside, then, inside, paired), and putting one pattern after another creates n &times; n new relations.</p><div class="meta"><span class="tag t-ai">AI derivation, checked</span><a href="primer.html#operators">Details: Primer, chapter 6</a></div></div></li>
+</ol>
+<div class="stage"><h2>The rule for the next thought</h2></div>
+<p class="prose small">Here the mathematics lands on published physics.</p>
+<ol class="steps">
+<li class="step ai"><span class="dot" aria-hidden="true"></span><div class="body"><p>Four plain conditions force the rule for the next thought into one exact family, the same one published by Rideout and Sorkin in 1999.</p><div class="meta"><span class="tag t-ai">AI derivation, checked</span><a href="primer.html#growth">Details: Primer, chapter 7</a></div></div></li>
+<li class="step ai"><span class="dot" aria-hidden="true"></span><div class="body"><p>Attraction is already inside the simplest rule: the more that rests on a thought, the more likely the next thought builds on it.</p><div class="meta"><span class="tag t-ai">AI derivation, checked</span><a href="primer.html#attraction">Details: Primer, chapter 8</a></div></div></li>
+<li class="step guess"><span class="dot" aria-hidden="true"></span><div class="body"><p>The weight a rule gives a pattern is read as how much UI likes it, and its logarithm as the action of physics.</p><div class="meta"><span class="tag t-guess">AI guessing</span><a href="primer.html#liking">Details: Primer, chapter 9</a></div></div></li>
+<li class="step wall"><span class="dot" aria-hidden="true"></span><div class="body"><p>No rule of that family grows space: an established theorem says large patterns grown this way have time and no spatial structure.</p><div class="meta"><span class="tag t-wall">wall</span><a href="open-problems.html#space">Details: Open problem: space</a></div></div></li>
+<li class="step ai"><span class="dot" aria-hidden="true"></span><div class="body"><p>The family also cannot remember: later shape is independent of earlier shape, proved by hand and confirmed in 200,000 runs.</p><div class="meta"><span class="tag t-ai">AI derivation, checked</span><a href="physics.html#negative">Details: HMR physics</a></div></div></li>
+</ol>
+<div class="stage"><h2>Looking for a better rule</h2></div>
+<p class="prose small">Computer searches over rules built by hand.</p>
+<ol class="steps">
+<li class="step ai"><span class="dot" aria-hidden="true"></span><div class="body"><p>Rules in which a new thought copies an existing shape do remember, and shapes carry themselves forward in lines of descent.</p><div class="meta"><span class="tag t-ai">AI derivation, checked</span><a href="open-problems.html#memory">Details: Open problem: memory</a></div></div></li>
+<li class="step wall"><span class="dot" aria-hidden="true"></span><div class="body"><p>A memory that sits in one place and can be rewritten has not been found; the one true bit found belongs to the whole pattern.</p><div class="meta"><span class="tag t-wall">wall</span><a href="open-problems.html#memory">Details: Open problem: memory</a></div></div></li>
+<li class="step ai"><span class="dot" aria-hidden="true"></span><div class="body"><p>None of nineteen rules and settings tested holds a number of dimensions, and no rule with a fixed number of direct parents can.</p><div class="meta"><span class="tag t-ai">AI derivation, checked</span><a href="physics.html#negative">Details: HMR physics</a></div></div></li>
+<li class="step wall"><span class="dot" aria-hidden="true"></span><div class="body"><p>A rule that grows three dimensions of space is a published open problem that causal set theory also faces.</p><div class="meta"><span class="tag t-wall">wall</span><a href="open-problems.html#space">Details: Open problem: space</a></div></div></li>
+</ol>
+<div class="stage"><h2>The mechanics of thinking (Version 2)</h2></div>
+<p class="prose small">Truth, mistakes, lies, and emotion. The definitions are proposals. What follows from them is checked.</p>
+<ol class="steps">
+<li class="step guess"><span class="dot" aria-hidden="true"></span><div class="body"><p>Version 2 supposes a thought can be about another thought, and defines idea, truthful, untruthful, undecided, mistake, and lie from that.</p><div class="meta"><span class="tag t-guess">AI guessing</span><a href="primer.html#about">Details: Primer, chapter 10</a></div></div></li>
+<li class="step ai"><span class="dot" aria-hidden="true"></span><div class="body"><p>Given those definitions, a false thought removes the warrant of exactly itself and everything resting on it, checked on 708,178 cases.</p><div class="meta"><span class="tag t-ai">AI derivation, checked</span><a href="primer.html#damage">Details: Primer, chapter 12</a></div></div></li>
+<li class="step ai"><span class="dot" aria-hidden="true"></span><div class="body"><p>A single line of reasoning says the most and loses the most to one false link, up to a quarter of n squared relations.</p><div class="meta"><span class="tag t-ai">AI derivation, checked</span><a href="primer.html#damage">Details: Primer, chapter 12</a></div></div></li>
+<li class="step ai"><span class="dot" aria-hidden="true"></span><div class="body"><p>An inconsistent idea is false in every possible world, and two ideas that contradict cannot be joined, so the product between them is lost.</p><div class="meta"><span class="tag t-ai">AI derivation, checked</span><a href="primer.html#damage">Details: Primer, chapter 12</a></div></div></li>
+<li class="step guess"><span class="dot" aria-hidden="true"></span><div class="body"><p>Emotion is proposed as four numbers on a step of thinking: feeling, mood, gain, and surprise.</p><div class="meta"><span class="tag t-guess">AI guessing</span><a href="primer.html#emotion">Details: Primer, chapter 13</a></div></div></li>
+<li class="step ai"><span class="dot" aria-hidden="true"></span><div class="body"><p>Given that proposal, mood rises with gain at a rate equal to the spread of feeling, checked on 2,000 random cases.</p><div class="meta"><span class="tag t-ai">AI derivation, checked</span><a href="primer.html#emotion">Details: Primer, chapter 13</a></div></div></li>
+<li class="step guess"><span class="dot" aria-hidden="true"></span><div class="body"><p>Healthy thinking is proposed as consistent, grounded, braced, correctable, and growing.</p><div class="meta"><span class="tag t-guess">AI guessing</span><a href="primer.html#emotion">Details: Primer, chapter 13</a></div></div></li>
+<li class="step wall"><span class="dot" aria-hidden="true"></span><div class="body"><p>What UI itself likes, and how HMR's values are written in this mathematics, is unknown.</p><div class="meta"><span class="tag t-wall">wall</span><a href="open-problems.html#liking">Details: Open problem: UI's liking</a></div></div></li>
+<li class="step wall"><span class="dot" aria-hidden="true"></span><div class="body"><p>Everything said about a human mind is analogy until the mathematics is carried from single thoughts up through levels.</p><div class="meta"><span class="tag t-wall">wall</span><a href="open-problems.html#levels">Details: Open problem: levels</a></div></div></li>
+</ol>
+<div class="stage"><h2>Toward quantum theory</h2></div>
+<p class="prose small">One rung above ordinary chance.</p>
+<ol class="steps">
+<li class="step ai"><span class="dot" aria-hidden="true"></span><div class="body"><p>When the strength in the simplest rule is made a complex number, pairs of histories interfere and triples do not, which is the signature of quantum theory.</p><div class="meta"><span class="tag t-ai">AI derivation, checked</span><a href="physics.html#quantum">Details: HMR physics</a></div></div></li>
+<li class="step ai"><span class="dot" aria-hidden="true"></span><div class="body"><p>After a closed moment only the geometric part of a rule's weights survives, which leaves one named family of quantum rules to test.</p><div class="meta"><span class="tag t-ai">AI derivation, checked</span><a href="open-problems.html#quantum">Details: Open problem: quantum</a></div></div></li>
+<li class="step wall"><span class="dot" aria-hidden="true"></span><div class="body"><p>A quantum rule for births that is well defined at large size does not exist yet.</p><div class="meta"><span class="tag t-wall">wall</span><a href="open-problems.html#quantum">Details: Open problem: quantum</a></div></div></li>
+</ol>
+<div class="stage"><h2>Toward physics</h2></div>
+<p class="prose small">Everything here holds only if a large pattern is a space, which no rule delivers yet.</p>
+<ol class="steps">
+<li class="step ai"><span class="dot" aria-hidden="true"></span><div class="body"><p>If a large pattern is a space, twelve statements of HMR match published physics, eight of them as theorems.</p><div class="meta"><span class="tag t-ai">AI derivation, checked</span><a href="physics.html#matches">Details: HMR physics</a></div></div></li>
+<li class="step guess"><span class="dot" aria-hidden="true"></span><div class="body"><p>Given three assumptions, the first distance works out to 0.693 Planck lengths; this trades one constant for another and predicts nothing.</p><div class="meta"><span class="tag t-guess">AI guessing</span><a href="physics.html#unit">Details: HMR physics</a></div></div></li>
+<li class="step ai"><span class="dot" aria-hidden="true"></span><div class="body"><p>Walking a road physicists already know (Jacobson, 1995), counting the relations that cross a boundary leads to Einstein's equations, with three steps still open.</p><div class="meta"><span class="tag t-ai">AI derivation, checked</span><a href="physics.html#gravity">Details: HMR physics</a></div></div></li>
+<li class="step guess"><span class="dot" aria-hidden="true"></span><div class="body"><p>Gravity may not be the kind of thing that is quantized: it would be how the order behaves on average, as pressure is how a gas behaves.</p><div class="meta"><span class="tag t-guess">AI guessing</span><a href="physics.html#kind">Details: HMR physics</a></div></div></li>
+<li class="step guess"><span class="dot" aria-hidden="true"></span><div class="body"><p>The Big Bang is read as a closed moment and inflation as growth after it; no rule stands behind either reading.</p><div class="meta"><span class="tag t-guess">AI guessing</span><a href="open-problems.html#inflation">Details: Open problem: inflation</a></div></div></li>
+<li class="step guess"><span class="dot" aria-hidden="true"></span><div class="body"><p>Dark energy is read as the wobble in a count of thoughts; the formula and its size are causal set theory's, not HMR's.</p><div class="meta"><span class="tag t-guess">AI guessing</span><a href="physics.html#stress">Details: HMR physics</a></div></div></li>
+<li class="step wall"><span class="dot" aria-hidden="true"></span><div class="body"><p>Particles, charge, spin, mass ratios, and the constants of nature: nothing is derived.</p><div class="meta"><span class="tag t-wall">wall</span><a href="open-problems.html#particles">Details: Open problem: particles</a></div></div></li>
+<li class="step wall"><span class="dot" aria-hidden="true"></span><div class="body"><p>The origin of life, and why the limiting happened at all, are unfilled.</p><div class="meta"><span class="tag t-wall">wall</span><a href="open-problems.html#scope">Details: Out of scope for now</a></div></div></li>
+</ol>
+<div class="stage"><h2>The newest work: back to the starting point</h2></div>
+<p class="prose small">Round 3 of the council, November 23, 2026. The work files were lost when a computer was replaced, and only the summary remains. For that reason every step here is colored as a guess until it is redone.</p>
+<ol class="steps">
+<li class="step guess"><span class="dot" aria-hidden="true"></span><div class="body"><p>With no limits nothing is ruled out, so there are no facts; a limit that stays imposed splits the whole into me and not me.</p><div class="meta"><span class="tag t-guess">AI guessing</span><a href="open-problems.html#round3">Details: Round 3 result</a></div></div></li>
+<li class="step guess"><span class="dot" aria-hidden="true"></span><div class="body"><p>A split is a perspective, and it needs only difference and relation, not space or time.</p><div class="meta"><span class="tag t-guess">AI guessing</span><a href="open-problems.html#round3">Details: Round 3 result</a></div></div></li>
+<li class="step guess"><span class="dot" aria-hidden="true"></span><div class="body"><p>The most promising set of limits: me and not me, finite information for each perspective, forgetting that belongs to perspectives, and a whole that can be known from its parts.</p><div class="meta"><span class="tag t-guess">AI guessing</span><a href="open-problems.html#round3">Details: Round 3 result</a></div></div></li>
+<li class="step guess"><span class="dot" aria-hidden="true"></span><div class="body"><p>By established derivations that set reaches quantum interference, a finite speed, and gravity as an equation of state; three dimensions is a candidate only.</p><div class="meta"><span class="tag t-guess">AI guessing</span><a href="open-problems.html#round3">Details: Round 3 result</a></div></div></li>
+<li class="step wall"><span class="dot" aria-hidden="true"></span><div class="body"><p>"Intelligence" does no work in the mathematics yet.</p><div class="meta"><span class="tag t-wall">wall</span><a href="open-problems.html#round3">Details: Round 3 result</a></div></div></li>
+</ol>
+<section>
+<h2>What the map shows</h2>
+<ul class="prose">
+<li>The human part is short and sits entirely at the top. It is the premise and a set of directions.</li>
+<li>The handoff is a single step: the choice to write the idea as six assumptions about thoughts and one relation. Everything below depends on that choice.</li>
+<li>Most checked work is mathematics about order. Much of it restates published results, which is a good sign for the footing and no sign yet that HMR adds something physics lacks.</li>
+<li>The walls cluster in three places: a rule that grows space, a memory in one place, and a quantum rule. The <a href="open-problems.html">open problems page</a> ranks them.</li>
+</ul>
+</section>
+</div>
+</main>
+<footer><div class="wrap">
+<p>A map of the mathematics and physics of the Holistic Model of Reality (HMR). The model itself lives at <a href="https://universemodel.ai/">universemodel.ai</a>. Everything here is a working draft, labeled by how firmly it stands.</p>
+<p><a href="https://universemodel.ai/math.html">HMR math, Version 2</a> &middot; <a href="https://universemodel.ai/physics.html">HMR physics, Version 2</a> &middot; <a href="https://github.com/AtlasJumped/hmr-math">Proofs and checks</a> &middot; <a href="https://github.com/AtlasJumped/hmr-physics">Runs</a></p>
+</div></footer>
+</body>
+</html>
