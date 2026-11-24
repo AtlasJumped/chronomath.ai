@@ -11,7 +11,7 @@
       ':root{--white:#0E1522;--mist:#131C2C;--ice:#182338;--line:#2A3852;--navy:#EAF1FB;--ink:#DCE6F5;--soft:#9DB0CC;--blue:#7DB1FF;--blue-d:#A6C9FF;--shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.3)}' +
       CARDS.replace('CARDBG', '#162033') + '.site-head{background:rgba(14,21,34,.94)!important}' }
   ];
-  var LEVELS = [['strong dislike', 'Strong dislike'], ['dislike', 'Dislike'], ['like', 'Like'], ['strong like', 'Strong like']];
+  var LEVELS = [['strong like', 'Strong like'], ['like', 'Like'], ['dislike', 'Dislike'], ['strong dislike', 'Strong dislike']];
   var KEY = 'chronomath-design-ratings-v1', KEYD = 'chronomath-design-current';
   var store = { get: function (k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
                 set: function (k, v) { try { localStorage.setItem(k, v); } catch (e) {} } };
