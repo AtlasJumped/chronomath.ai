@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Other math | HMR Math</title>
+<meta name="description" content="How HMR math relates to partial orders, causal sets, category theory, information theory, and other fields, where it reuses known mathematics, and a conjecture about what each kind of mathematics is.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700;750&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=6941a45c">
+<script src="site.js?v=f4d26f3d" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head"><div class="wrap">
+<a class="brand" href="index.html"><span class="lg" aria-hidden="true"></span><span>HMR Math</span></a>
+<button class="menu" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+<nav class="nav" id="nav" aria-label="Main"><a href="index.html">Home</a><a href="assumptions.html">Assumptions</a><a href="map.html">Where it runs away</a><a href="open-problems.html">Open problems</a><a href="primer.html">Primer</a><a href="other-math.html" aria-current="page">Other math</a><a href="tracker.html">Tracker</a><a href="glossary.html">Glossary</a><div class="grp"><button type="button" class="grpbtn" aria-haspopup="true" aria-expanded="false">HMR physics<span aria-hidden="true">&#9662;</span></button><div class="drop"><a href="physics.html">HMR physics: overview</a><a href="physics.html#unit">What one thought is worth</a><a href="physics.html#matches">Where HMR and physics agree</a><a href="physics.html#negative">The two negative results</a><a href="physics.html#gravity">The route to gravity</a><a href="physics.html#stress">The stress test</a><a href="tracker.html?col=physics">Physics column of the tracker</a></div></div></nav>
+</div></header>
+<main id="main">
+<div class="hero"><div class="wrap">
+<p class="eyebrow">Other math</p>
+<h1>How HMR math relates to the rest of mathematics</h1>
+<p class="lede">Is HMR math new? Mostly not, so far. This page says plainly which known mathematics it reuses, what might be its own, and then states a conjecture about what the different kinds of mathematics are.</p>
+</div></div>
+
+<div class="wrap">
+<section id="short">
+<h2>The short answer</h2>
+<ul class="prose">
+<li>The objects are finite partial orders. That is a standard part of mathematics.</li>
+<li>The growth rule, the link between order and dimension, and most of the bridge to physics come from causal set theory, a research program in quantum gravity.</li>
+<li>The project's own audit says it directly: most of HMR's certified content is order mathematics it shares with causal set theory.</li>
+<li>What may be HMR's own is the mechanics of meaning in Version 2, some negative results about specific rules, and the single reading that ties the pieces together. We have not done a literature search to confirm that any of it is new.</li>
+</ul>
+</section>
+
+<section id="reuse">
+<h2>Where HMR math reuses known mathematics</h2>
+<p class="prose">Names and dates are as given on the live <a href="https://universemodel.ai/math.html">math</a> and <a href="https://universemodel.ai/physics.html">physics</a> pages and in the council files. Those pages hold the links to the sources.</p>
+<div class="tw"><table>
+<tr><th>Field</th><th>What HMR math takes from it</th><th>What HMR calls it</th></tr>
+<tr><td>Order theory (partial orders)</td><td>A finite set with a relation that never runs in a circle. The counts 1, 1, 2, 5, 16, 63, 318 of distinct patterns are the known counts.</td><td>A state, or pattern, of thoughts</td></tr>
+<tr><td>Arithmetic of ordered sets (Birkhoff, 1930s and 1940s)</td><td>Sum, ordered sum, composition, and product of orders, with their laws.</td><td>Beside, then, inside, paired</td></tr>
+<tr><td>Causal set theory</td><td>The classical sequential growth law (Rideout and Sorkin, 1999). Volume as a count, and time as the longest chain (Brightwell and Gregory, 1991). Dimension from the share of related pairs (Myrheim, 1978; Meyer, 1988). A random scatter with no preferred direction (Bombelli, Henson, and Sorkin, 2009). Closed moments (Martin, O'Connor, Rideout, and Sorkin, 2001). The theorem that the growth family yields no space (Brightwell and Georgiou, 2010).</td><td>The rule for the next thought, a post, the balance of together and apart</td></tr>
+<tr><td>Probability</td><td>A growth rule is a Markov chain on the set of finite orders. Reweighting by w is a known construction (a Doob transform), and the rules that keep three of the four conditions are the order-invariant measures of Brightwell and Luczak (2011).</td><td>Liking</td></tr>
+<tr><td>Concurrency theory in computer science</td><td>A pattern is a history with the order of unrelated births forgotten. This is the trace, or pomset, picture of processes that run side by side (Mazurkiewicz; Pratt).</td><td>Process and trace</td></tr>
+<tr><td>Model theory and logic</td><td>Truth as a structure, a map, and a test of whether the map keeps the structure (Tarski). An order-preserving map, and an order embedding.</td><td>About, truthful, faithful</td></tr>
+<tr><td>Information theory</td><td>Surprise as &minus;ln of a chance. The expected feeling of a step is a Kullback-Leibler divergence, and that it is never negative is Gibbs' inequality. One two-way distinction is one bit.</td><td>Surprise, the error signal, the bit</td></tr>
+<tr><td>Statistical mechanics</td><td>A chance of the form e<sup>&minus;cost</sup>. A free energy: liking against the number of histories. The identity that ties mood to gain is a standard one.</td><td>Cost, gain, mood</td></tr>
+<tr><td>Category theory</td><td>One theorem: Lawvere's fixed-point theorem (1969), used to show that no complete two-valued model of oneself exists. HMR math does not otherwise use category theory.</td><td>The limit on a self-model</td></tr>
+<tr><td>Quantum measure theory</td><td>Quantum theory as the rung where pairs of histories interfere and triples do not (Sorkin, 1994), and the bound of 2.83 on linked outcomes (Craig and others, 2007).</td><td>The road to quantum mechanics</td></tr>
+<tr><td>Thermodynamics of spacetime</td><td>Einstein's equations as an equation of state (Jacobson, 1995).</td><td>The route to gravity</td></tr>
+<tr><td>Graph decomposition</td><td>A group of elements that everything else relates to in the same way acts as one element (modular decomposition).</td><td>One and many; a level of looking</td></tr>
+<tr><td>Constructive and finitist mathematics</td><td>Working without finished infinities. Modern set theory's own answer to Russell's paradox: sets are built in stages.</td><td>Why the famous paradoxes cannot be set up</td></tr>
+</table></div>
+</section>
+
+<section id="round3-math">
+<h2>Mathematics the round 3 council points to</h2>
+<p class="prose">These entered in the newest work on the starting point. They are leads from a council summary whose work files were lost. Nothing here is built into HMR math yet.</p>
+<div class="tw"><table>
+<tr><th>Field</th><th>What it might supply</th></tr>
+<tr><td>Operator algebras (Tomita and Takesaki; Connes and Rovelli, 1994)</td><td>A flow of time derived from a state, with no time put in. A way to have a perspective before time.</td></tr>
+<tr><td>Reconstructions of quantum theory (Hardy; M&uuml;ller and Masanes)</td><td>Quantum theory, and possibly three dimensions, from a short list of limits on information.</td></tr>
+<tr><td>Relational quantum mechanics (Rovelli)</td><td>Two postulates: finite information for each perspective, and new questions always possible.</td></tr>
+<tr><td>Statistical distance (Wootters)</td><td>Distance counted in distinguishable steps, which puts the path from no to yes at &pi;.</td></tr>
+<tr><td>Lattice dynamics (Lieb and Robinson)</td><td>A finite speed that appears once there are neighbors.</td></tr>
+</table></div>
+</section>
+
+<section id="own">
+<h2>What may be HMR's own</h2>
+<div class="grid g2">
+<div class="card"><h3>Meaning built on order</h3><p>Version 2 defines truthful, untruthful, undecided, mistake, and lie using only an order and a matching. From that it counts what a false part costs: a line of n thoughts loses k &times; (n &minus; k) relations to one false link, and a braced pattern loses one.</p><p><span class="tag t-guess">proposed</span> The ingredients are standard. Whether the results appear elsewhere, we do not know.</p></div>
+<div class="card"><h3>Negative results about specific rules</h3><p>The first growth family is blind to its own past, so it holds no memory, no particle, and no record. No rule with a fixed number of direct parents can grow a space.</p><p><span class="tag t-ai">checked</span> The second follows from a published result. The first was proved by hand and confirmed in runs.</p></div>
+<div class="card"><h3>One reading for everything</h3><p>The same order is read as thought, time, space, and liking at once, under one premise. This is where HMR differs from causal set theory, which makes no claim about intelligence.</p><p><span class="tag t-idea">HMR reading</span> A reading adds no new number. The round 3 council notes that "intelligence" does no work in the mathematics yet.</p></div>
+<div class="card"><h3>Capabilities ordinary math lacks</h3><p>None has been shown. HMR math cannot yet do anything that the mathematics above cannot. It also lacks things ordinary mathematics has: negation, qualities, approximate truth, and a way to take anything away.</p><p><span class="tag t-wall">nothing yet</span></p></div>
+</div>
+</section>
+
+<section id="hypothesis">
+<h2>A conjecture: each kind of mathematics is a kind of thinking</h2>
+<div class="note warn"><b>Everything in this section is conjecture.</b> The hypothesis is HMR's. The pairings in the table are first drafts by the AI team. They are not accepted into HMR, they are not derived from anything, and several are probably wrong.</div>
+<p class="prose"><b>The hypothesis.</b> If mathematics is the ordered thought of a Universal Intelligence, then each type of mathematics should line up with a mental process of UI that can be identified and defined. Those processes should in turn show up, on the large scale, as things that happen in physical reality.</p>
+<p class="prose">If the hypothesis is right, the fields of mathematics are not separate inventions. This kind of math is what it looks like when UI is thinking about this kind of thing, and that kind is what it looks like when UI is thinking about another.</p>
+<div class="tw"><table>
+<tr><th>Kind of mathematics</th><th>Candidate mental process of UI</th><th>Where the pairing comes from</th><th>What it would be in physics</th></tr>
+<tr><td>Counting and arithmetic</td><td>Repeating: doing the same thing again</td><td>On the math page: "counting is repetition"</td><td>Volume as a count of thoughts</td></tr>
+<tr><td>Order theory</td><td>Relating: putting one thought before another</td><td>Assumption 9; the whole of HMR math</td><td>Time, and cause before effect</td></tr>
+<tr><td>Logic and proof</td><td>Checking: following a path that never leaves order</td><td>On the math page: "a proof is unbroken order"</td><td>No candidate</td></tr>
+<tr><td>Set theory</td><td>Distinguishing: sorting things into me and not me, this kind and that kind</td><td>The first distinction</td><td>No candidate</td></tr>
+<tr><td>Geometry</td><td>Taking a perspective and measuring a distance from it</td><td>The first distance and the first boundary</td><td>Space</td></tr>
+<tr><td>Topology</td><td>Noticing nearness: what is next to what, and where an edge is</td><td>Round 3 suggestion that nearness is the next open slot</td><td>No candidate</td></tr>
+<tr><td>Probability</td><td>Being unsure: holding several possible next thoughts with weights</td><td>The open stage before a commit</td><td>Quantum chances</td></tr>
+<tr><td>Combinatorics</td><td>Imagining: laying out everything that could be thought next</td><td>The count of possible histories</td><td>Entropy</td></tr>
+<tr><td>Statistical mechanics</td><td>Liking, and how strictly it is followed</td><td>Cost, gain, and mood in the primer</td><td>Energy, action, and temperature</td></tr>
+<tr><td>Information theory</td><td>Noticing and recording: being surprised, and keeping a record</td><td>Surprise; a commit as the making of a record</td><td>Entropy and measurement</td></tr>
+<tr><td>Algebra and symmetry (group theory)</td><td>Reversing, mirroring, and finding what stays the same</td><td>A fan's edge thoughts can be shuffled with no change</td><td>Rotation, conservation laws (none derived)</td></tr>
+<tr><td>Calculus and analysis</td><td>Stepping back: seeing very many thoughts as one smooth thing</td><td>The math page keeps real numbers as "the way to describe patterns of very many thoughts"</td><td>Smooth space and time; gravity as an average</td></tr>
+<tr><td>Complex numbers and quantum theory</td><td>Holding possibilities with phases before attention selects one</td><td>A proposal under test in the quantum problem</td><td>Interference and entanglement</td></tr>
+<tr><td>Category theory</td><td>Modeling: making one pattern carry the shape of another</td><td>Version 2's "about" as an order-preserving map</td><td>No candidate</td></tr>
+<tr><td>Fixed points and recursion</td><td>Modeling oneself</td><td>The self-model equation S* = F(S*) on the math page</td><td>The Big Bang as a closed moment (conjecture)</td></tr>
+<tr><td>Linear algebra</td><td>Thinking many unrelated thoughts in parallel</td><td>A clue from computing: parallel hardware works on large arrays at once</td><td>No candidate</td></tr>
+</table></div>
+<h3>How this could be tested</h3>
+<ul class="prose">
+<li>A pairing earns its place only if it does work: the mental process, written in HMR math, must reproduce a theorem of the field or predict where the field applies in physics.</li>
+<li>A pairing fails if two fields that are provably the same mathematics get different processes, or if one process needs two unrelated fields.</li>
+<li>None of the sixteen rows has passed such a test. The <a href="tracker.html">tracker</a> is where rows like these get filled in.</li>
+</ul>
+</section>
+</div>
+</main>
+<footer><div class="wrap">
+<p>A map of the mathematics and physics of the Holistic Model of Reality (HMR). The model itself lives at <a href="https://universemodel.ai/">universemodel.ai</a>. Everything here is a working draft, labeled by how firmly it stands.</p>
+<p><a href="https://universemodel.ai/math.html">HMR math, Version 2</a> &middot; <a href="https://universemodel.ai/physics.html">HMR physics, Version 2</a> &middot; <a href="https://github.com/AtlasJumped/hmr-math">Proofs and checks</a> &middot; <a href="https://github.com/AtlasJumped/hmr-physics">Runs</a></p>
+</div></footer>
+</body>
+</html>

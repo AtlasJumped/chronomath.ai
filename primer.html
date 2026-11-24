@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Primer | HMR Math</title>
+<meta name="description" content="HMR math taught from the beginning: the objects, each operator with a small worked example, and the Version 2 definitions of truth, mistakes, lies, and emotion.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700;750&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=6941a45c">
+<script src="site.js?v=f4d26f3d" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head"><div class="wrap">
+<a class="brand" href="index.html"><span class="lg" aria-hidden="true"></span><span>HMR Math</span></a>
+<button class="menu" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+<nav class="nav" id="nav" aria-label="Main"><a href="index.html">Home</a><a href="assumptions.html">Assumptions</a><a href="map.html">Where it runs away</a><a href="open-problems.html">Open problems</a><a href="primer.html" aria-current="page">Primer</a><a href="other-math.html">Other math</a><a href="tracker.html">Tracker</a><a href="glossary.html">Glossary</a><div class="grp"><button type="button" class="grpbtn" aria-haspopup="true" aria-expanded="false">HMR physics<span aria-hidden="true">&#9662;</span></button><div class="drop"><a href="physics.html">HMR physics: overview</a><a href="physics.html#unit">What one thought is worth</a><a href="physics.html#matches">Where HMR and physics agree</a><a href="physics.html#negative">The two negative results</a><a href="physics.html#gravity">The route to gravity</a><a href="physics.html#stress">The stress test</a><a href="tracker.html?col=physics">Physics column of the tracker</a></div></div></nav>
+</div></header>
+<main id="main">
+<div class="hero"><div class="wrap">
+<p class="eyebrow">Primer</p>
+<h1>HMR math from the first page</h1>
+<p class="lede">A first textbook tells you what a number is, then what a plus sign does. This page does the same for HMR math. One object, one operation, then everything built from them, each with a small example you can check by hand.</p>
+</div></div>
+
+<div class="wrap">
+<div class="note"><b>Labels.</b> <span class="tag t-est">established</span> is accepted mathematics or physics. <span class="tag t-ai">exact</span> follows from HMR's assumptions by a proof or a count anyone can repeat. <span class="tag t-guess">proposed</span> is a Version 2 definition that is not yet accepted into HMR. <span class="tag t-idea">HMR reading</span> is how HMR understands a result. Source for everything here: the live <a href="https://universemodel.ai/math.html">math page</a>, Version 2.</div>
+
+<h2>Chapters</h2>
+<ol class="toc">
+<li><a href="#numbers">What the first numbers mean</a></li>
+<li><a href="#state">A thought, a state, and the void</a></li>
+<li><a href="#birth">Birth, the one operator</a></li>
+<li><a href="#relations">Before, after, apart</a></li>
+<li><a href="#counts">The counts: n, R, and the four sizes</a></li>
+<li><a href="#operators">Four ways to combine patterns</a></li>
+<li><a href="#growth">The rule for the next thought</a></li>
+<li><a href="#attraction">Attraction</a></li>
+<li><a href="#liking">Liking, cost, and closed moments</a></li>
+<li><a href="#about">About, ideas, and truth</a></li>
+<li><a href="#lies">Ignorance, mistakes, and lies</a></li>
+<li><a href="#damage">What a false part and a contradiction cost</a></li>
+<li><a href="#emotion">Emotion, healthy, and good</a></li>
+<li><a href="#mind">Ordinary mental events</a></li>
+<li><a href="#different">What is different from other math</a></li>
+</ol>
+
+<section class="chapter" id="numbers">
+<h2><span class="n">1</span>What the first numbers mean</h2>
+<p class="prose">In HMR, the basic objects of mathematics are stages in UI coming to understand "me" and "not me". These readings are the human idea, and the rest of the primer is the attempt to make them exact. <span class="tag t-idea">HMR reading</span></p>
+<div class="tw"><table>
+<tr><th>Symbol</th><th>Reading</th></tr>
+<tr><td class="num">&infin;</td><td>The unlimited: intelligence with no limit and no order. It is the state before any limit was chosen, not a very large number.</td></tr>
+<tr><td class="num">1</td><td>The first unit: the distance between me and not me.</td></tr>
+<tr><td class="num">2</td><td>The first distinction: me and not me. Two is the smallest number of things that can differ.</td></tr>
+<tr><td class="num">&pi;</td><td>The first boundary: the ratio of the edge of me to its reach.</td></tr>
+<tr><td class="num">1, 1+1, 1+1+1</td><td>Counting is the first limit, repeated.</td></tr>
+</table></div>
+<div class="ex"><b>Worked example</b>
+<p>&pi; can come from counting two-way choices, with no circle in sight. Make 2n yes or no choices. The chance they split exactly evenly approaches 1/&radic;(&pi;n). Turned around:</p>
+<div class="formula">1 / ( n &times; ( C(2n, n) / 4<sup>n</sup> )<sup>2</sup> ) &rarr; &pi;</div>
+<p>For n = 10, 100, and 1000 this gives 3.2211, 3.1495, and 3.1424. <span class="tag t-est">established</span> We recomputed these for this page.</p>
+<p>What this does not give is a sphere. In HMR's own mechanics the first boundary is a fan, and a round shape exists only as a limit over very many thoughts.</p></div>
+</section>
+
+<section class="chapter" id="state">
+<h2><span class="n">2</span>A thought, a state, and the void</h2>
+<p class="prose"><b>A thought</b> is the one element. It has no place and no size in space. All it has is its relations to other thoughts. Symbol: a dot. <span class="tag t-ai">exact</span></p>
+<p class="prose"><b>A state</b>, also called a pattern, is a finite set of thoughts with one relation, "came before". The relation never runs in a circle. We write <span class="f">a &pr; b</span> for "a came before b". If a came before b, and b before c, then a came before c. <span class="tag t-ai">exact</span></p>
+<p class="prose"><b>The void</b>, written <span class="f">&empty;</span>, is the state with no thoughts in it. Growth starts here.</p>
+<div class="ex"><b>Worked example</b>
+<p>Three thoughts can form exactly five patterns. A line means "came before", and time runs upward.</p>
+<div class="pats"><figure><svg width="102" height="42" viewBox="0 0 102 42" role="img" aria-label="all apart"><circle cx="21" cy="21" r="6"/><circle cx="51" cy="21" r="6"/><circle cx="81" cy="21" r="6"/></svg>all apart</figure><figure><svg width="72" height="72" viewBox="0 0 72 72" role="img" aria-label="a pair and one apart"><line x1="21" y1="51" x2="21" y2="21"/><circle cx="21" cy="51" r="6"/><circle cx="21" cy="21" r="6"/><circle cx="51" cy="51" r="6"/></svg>a pair and one apart</figure><figure><svg width="72" height="72" viewBox="0 0 72 72" role="img" aria-label="one, then two"><line x1="36.0" y1="51" x2="21" y2="21"/><line x1="36.0" y1="51" x2="51" y2="21"/><circle cx="36.0" cy="51" r="6"/><circle cx="21" cy="21" r="6"/><circle cx="51" cy="21" r="6"/></svg>one, then two</figure><figure><svg width="72" height="72" viewBox="0 0 72 72" role="img" aria-label="two, then one"><line x1="21" y1="51" x2="36.0" y2="21"/><line x1="51" y1="51" x2="36.0" y2="21"/><circle cx="21" cy="51" r="6"/><circle cx="51" cy="51" r="6"/><circle cx="36.0" cy="21" r="6"/></svg>two, then one</figure><figure><svg width="42" height="102" viewBox="0 0 42 102" role="img" aria-label="a line"><line x1="21" y1="81" x2="21" y2="51"/><line x1="21" y1="51" x2="21" y2="21"/><circle cx="21" cy="81" r="6"/><circle cx="21" cy="51" r="6"/><circle cx="21" cy="21" r="6"/></svg>a line</figure></div>
+<p>Four thoughts form 16 patterns, and five form 63. <span class="tag t-est">established</span></p></div>
+<p class="prose small">In ordinary mathematics a state is a finite partial order. See <a href="other-math.html#reuse">Other math</a>.</p>
+</section>
+
+<section class="chapter" id="birth">
+<h2><span class="n">3</span>Birth, the one operator</h2>
+<p class="prose"><b>Birth</b>, written <span class="f">+1</span>, is the only operation. Attend to any set S of existing thoughts. A new thought is born after everything in S and after everything S rests on. Calling S "attention" is a reading. <span class="tag t-est">established</span></p>
+<div class="ex"><b>Worked example</b>
+<p>Start with two thoughts, a then b. There are three possible births. The new thought is gold.</p>
+<div class="pats"><figure><svg width="42" height="72" viewBox="0 0 42 72" role="img" aria-label="before: a, then b"><line x1="21" y1="51" x2="21" y2="21"/><circle cx="21" cy="51" r="6"/><circle cx="21" cy="21" r="6"/></svg>before: a, then b</figure><figure><svg width="72" height="72" viewBox="0 0 72 72" role="img" aria-label="attend to a"><line x1="36.0" y1="51" x2="21" y2="21"/><line x1="36.0" y1="51" x2="51" y2="21"/><circle cx="36.0" cy="51" r="6"/><circle cx="21" cy="21" r="6"/><circle cx="51" cy="21" r="6" class="new"/></svg>attend to a</figure><figure><svg width="42" height="102" viewBox="0 0 42 102" role="img" aria-label="attend to b"><line x1="21" y1="81" x2="21" y2="51"/><line x1="21" y1="51" x2="21" y2="21"/><circle cx="21" cy="81" r="6"/><circle cx="21" cy="51" r="6"/><circle cx="21" cy="21" r="6" class="new"/></svg>attend to b</figure><figure><svg width="72" height="72" viewBox="0 0 72 72" role="img" aria-label="attend to nothing"><line x1="21" y1="51" x2="21" y2="21"/><circle cx="21" cy="51" r="6"/><circle cx="21" cy="21" r="6"/><circle cx="51" cy="51" r="6" class="new"/></svg>attend to nothing</figure></div>
+<p>Attending to b brings a along with it, because b rests on a. Attending to both a and b gives the same line.</p></div>
+<h3>The laws of birth</h3>
+<ul class="prose">
+<li>Nothing is born into the past.</li>
+<li>Attention completes itself: attending to a thought includes everything it rests on.</li>
+<li>Unrelated births commute: if neither of two new thoughts attends to the other, their order makes no difference.</li>
+<li>Related births do not commute.</li>
+<li>Nothing is removed. Thoughts and relations only accumulate.</li>
+<li>Each birth adds one. That is counting.</li>
+</ul>
+<p class="prose">Every finite pattern can be reached from the void by births. Growing them all by computer gives 1, 1, 2, 5, 16, 63, and 318 distinct patterns for zero to six thoughts, which are the known counts. <span class="tag t-est">established</span></p>
+</section>
+
+<section class="chapter" id="relations">
+<h2><span class="n">4</span>Before, after, apart</h2>
+<p class="prose">Any two thoughts are in one of three relations: one is <b>before</b> the other, <b>after</b> it, or they are <b>apart</b> (unrelated). For thoughts that are apart, the order of birth has no meaning. So time is the order of UI's thought and not one single line. <span class="tag t-ai">exact</span></p>
+<p class="prose"><b>Time between two thoughts</b> is defined as the number of links in the longest chain from the earlier to the later.</p>
+<p class="prose"><b>A link</b> is a direct relation: a came before b with nothing in between. A relation that follows from other relations is not a link.</p>
+<div class="ex"><b>Worked example</b>
+<p>In the line of three above, the bottom thought is before the top one. That relation is not a link, because it follows from the two links. The time from bottom to top is 2. In the pattern "one, then two", the two upper thoughts are apart: neither is before the other.</p></div>
+</section>
+
+<section class="chapter" id="counts">
+<h2><span class="n">5</span>The counts: n, R, and the four sizes</h2>
+<p class="prose"><span class="f">n</span> is the number of thoughts in a pattern. <span class="f">R</span> is the number of its relations, links and implied relations together.</p>
+<p class="prose">A single thought has four sizes, and all four are counts: <span class="tag t-ai">exact</span></p>
+<ul class="prose">
+<li><span class="f">m</span>: how many thoughts it attends to directly.</li>
+<li><span class="f">w</span>: how many it rests on in all.</li>
+<li><span class="f">f</span>: how many come to rest on it.</li>
+<li>How many are inside it on a closer look. A group of thoughts that every other thought relates to in the same way cannot be told from one thought when seen from outside.</li>
+</ul>
+<div class="ex"><b>Worked example</b>
+<p>Take a line of four thoughts. Then n = 4 and R = 6 (three links plus three implied relations). For the third thought: m = 1, w = 2, f = 1.</p>
+<p>A check that always holds: R equals the sum of w over all thoughts, and also the sum of f. Here w runs 0, 1, 2, 3, which adds to 6.</p></div>
+<p class="prose">Volume comes later, as counting: the volume of a region is the number of thoughts in it.</p>
+</section>
+
+<section class="chapter" id="operators">
+<h2><span class="n">6</span>Four ways to combine patterns</h2>
+<p class="prose">These are the arithmetic of ordered sets worked out by Garrett Birkhoff in the 1930s and 1940s. <span class="tag t-est">established</span></p>
+<div class="tw"><table>
+<tr><th>Operator</th><th>Meaning</th><th>Thoughts</th><th>Relations</th></tr>
+<tr><td>C beside D</td><td>Side by side, unrelated</td><td>n(C) + n(D)</td><td>R(C) + R(D)</td></tr>
+<tr><td>C then D</td><td>All of C before all of D</td><td>n(C) + n(D)</td><td>R(C) + R(D) + n(C) &times; n(D)</td></tr>
+<tr><td>D inside C</td><td>Every thought of C replaced by a copy of D</td><td>n(C) &times; n(D)</td><td>R(C) &times; n(D)<sup>2</sup> + n(C) &times; R(D)</td></tr>
+<tr><td>C paired with D</td><td>All pairs, ordered in both places</td><td>n(C) &times; n(D)</td><td>(R(C) + n(C)) &times; (R(D) + n(D)) &minus; n(C) &times; n(D)</td></tr>
+</table></div>
+<p class="small">The last relation count is not on the live math page. We counted it for this primer and checked it on small cases by script.</p>
+<div class="ex"><b>Worked example</b>
+<p>Let C be two thoughts in a line and D be two thoughts apart.</p>
+<div class="pats"><figure><svg width="42" height="72" viewBox="0 0 42 72" role="img" aria-label="C: n = 2, R = 1"><line x1="21" y1="51" x2="21" y2="21"/><circle cx="21" cy="51" r="6"/><circle cx="21" cy="21" r="6"/></svg>C: n = 2, R = 1</figure><figure><svg width="72" height="42" viewBox="0 0 72 42" role="img" aria-label="D: n = 2, R = 0"><circle cx="21" cy="21" r="6"/><circle cx="51" cy="21" r="6"/></svg>D: n = 2, R = 0</figure><figure><svg width="102" height="72" viewBox="0 0 102 72" role="img" aria-label="C beside D: R = 1"><line x1="21" y1="51" x2="21" y2="21"/><circle cx="21" cy="51" r="6"/><circle cx="21" cy="21" r="6"/><circle cx="51" cy="51" r="6"/><circle cx="81" cy="51" r="6"/></svg>C beside D: R = 1</figure><figure><svg width="72" height="102" viewBox="0 0 72 102" role="img" aria-label="C then D: R = 5"><line x1="36.0" y1="81" x2="36.0" y2="51"/><line x1="36.0" y1="51" x2="21" y2="21"/><line x1="36.0" y1="51" x2="51" y2="21"/><circle cx="36.0" cy="81" r="6"/><circle cx="36.0" cy="51" r="6"/><circle cx="21" cy="21" r="6"/><circle cx="51" cy="21" r="6"/></svg>C then D: R = 5</figure><figure><svg width="72" height="72" viewBox="0 0 72 72" role="img" aria-label="D inside C: R = 4"><line x1="21" y1="51" x2="21" y2="21"/><line x1="21" y1="51" x2="51" y2="21"/><line x1="51" y1="51" x2="21" y2="21"/><line x1="51" y1="51" x2="51" y2="21"/><circle cx="21" cy="51" r="6"/><circle cx="51" cy="51" r="6"/><circle cx="21" cy="21" r="6"/><circle cx="51" cy="21" r="6"/></svg>D inside C: R = 4</figure><figure><svg width="72" height="72" viewBox="0 0 72 72" role="img" aria-label="C inside D: R = 2"><line x1="21" y1="51" x2="21" y2="21"/><line x1="51" y1="51" x2="51" y2="21"/><circle cx="21" cy="51" r="6"/><circle cx="21" cy="21" r="6"/><circle cx="51" cy="51" r="6"/><circle cx="51" cy="21" r="6"/></svg>C inside D: R = 2</figure><figure><svg width="72" height="102" viewBox="0 0 72 102" role="img" aria-label="C paired with C: R = 5"><line x1="36.0" y1="81" x2="21" y2="51"/><line x1="36.0" y1="81" x2="51" y2="51"/><line x1="21" y1="51" x2="36.0" y2="21"/><line x1="51" y1="51" x2="36.0" y2="21"/><circle cx="36.0" cy="81" r="6"/><circle cx="21" cy="51" r="6"/><circle cx="51" cy="51" r="6"/><circle cx="36.0" cy="21" r="6"/></svg>C paired with C: R = 5</figure></div>
+<ul>
+<li><b>Beside:</b> 2 + 2 = 4 thoughts, 1 + 0 = 1 relation.</li>
+<li><b>Then:</b> 4 thoughts, 1 + 0 + 2 &times; 2 = 5 relations. Joining made 4 new relations, one for every pair that crosses.</li>
+<li><b>D inside C:</b> 4 thoughts, 1 &times; 2<sup>2</sup> + 2 &times; 0 = 4 relations. Twins in each of two generations.</li>
+<li><b>C inside D:</b> 4 thoughts, 0 &times; 2<sup>2</sup> + 2 &times; 1 = 2 relations. Two parent and child pairs.</li>
+<li><b>C paired with C:</b> 4 thoughts, (1 + 2) &times; (1 + 2) &minus; 4 = 5 relations. A diamond.</li>
+</ul>
+<p>"Inside" gave two different patterns depending on the order, so it does not commute.</p></div>
+<h3>What the operators teach</h3>
+<ul class="prose">
+<li><b>Number is order, forgotten.</b> Keep only "how many" and both ways of adding become plain addition, and both ways of multiplying become plain multiplication.</li>
+<li><b>More than the sum of its parts</b> has one exact meaning: <span class="f">R(C then D) &minus; R(C) &minus; R(D) = n(C) &times; n(D)</span>. Side by side there is no surplus.</li>
+<li><b>Prime patterns.</b> Dividing a pattern means finding smaller patterns it is built from. Of the 16 patterns on four thoughts, only 5 are a product of two smaller ones. The rest are prime.</li>
+</ul>
+</section>
+
+<section class="chapter" id="growth">
+<h2><span class="n">7</span>The rule for the next thought</h2>
+<p class="prose">A rule gives the chance of each possible birth. Ask four things of it:</p>
+<ol class="prose">
+<li>Nothing is born into the past.</li>
+<li>The chance of reaching a state does not depend on the order in which its unrelated thoughts were born.</li>
+<li>The odds between two possible births depend only on the two pasts involved, not on thoughts outside them.</li>
+<li>Something is always thought next: the chances add to one.</li>
+</ol>
+<p class="prose">If no possible birth has chance zero, the rule has exactly one form. There are numbers t<sub>0</sub> = 1, t<sub>1</sub>, t<sub>2</sub>, and so on, none negative. In a state of n thoughts, a birth whose past holds w thoughts, m of them seen directly, has chance</p>
+<div class="formula">chance = &lambda;(w, m) / &lambda;(n, 0), &nbsp; where &nbsp; &lambda;(w, m) = &Sigma;<sub>k = m &hellip; w</sub> C(w &minus; m, k &minus; m) t<sub>k</sub></div>
+<p class="prose">This is the classical sequential growth law of Rideout and Sorkin (1999), found in the search for a theory of quantum gravity. <span class="tag t-est">established</span> Reading t<sub>k</sub> as UI's weighting of a focus of size k is an HMR reading. The numbers t<sub>k</sub> are free, so this is a family and not one law.</p>
+<h3>The simplest rule</h3>
+<p class="prose">Let each existing thought be attended to with the same chance p, independently. The formula becomes <span class="f">p<sup>m</sup> (1 &minus; p)<sup>n &minus; w</sup></span>.</p>
+<div class="ex"><b>Worked example</b>
+<p>Take p = &frac12; and one thought. The second thought comes after the first with chance &frac12;, and beside it with chance &frac12;.</p>
+<p>Now grow a third on the line a, then b. To make a line of three, the new thought must attend to b: here m = 1, w = 2, n = 2, so the chance is (&frac12;)<sup>1</sup> &times; (&frac12;)<sup>0</sup> = &frac12;. The whole line of three therefore has chance &frac12; &times; &frac12; = &frac14;.</p></div>
+<p class="prose">The simplest rule is shown to make the family concrete. It is not offered as UI's law. The live math page has a <a href="https://universemodel.ai/math.html#grow-toy">tool to grow patterns with it</a>.</p>
+</section>
+
+<section class="chapter" id="attraction">
+<h2><span class="n">8</span>Attraction</h2>
+<p class="prose">Attraction is already inside the simplest rule. Nothing had to be added. <span class="tag t-est">established</span></p>
+<div class="tw"><table>
+<tr><th>Statement</th><th>Formula</th></tr>
+<tr><td>Together is free, apart is paid for: the chance of a pattern grown in a given order.</td><td class="num">p<sup>links</sup> &times; (1 &minus; p)<sup>pairs apart</sup></td></tr>
+<tr><td>Attention attracts attention: the chance that the next thought builds on a thought that already has f thoughts resting on it.</td><td class="num">1 &minus; (1 &minus; p)<sup>1 + f</sup></td></tr>
+<tr><td>Two thoughts with separate followings pull as a product.</td><td class="num">pull(x) &times; pull(y)</td></tr>
+</table></div>
+<div class="ex"><b>Worked example</b>
+<p>Let p = 0.1. A thought with nothing resting on it is built on next with chance 1 &minus; 0.9 = 0.10. A thought with f = 4 is built on with chance 1 &minus; 0.9<sup>5</sup> = 0.41. Four followers made it about four times as attractive.</p></div>
+<p class="prose">Reading this as "liking a thing, and so doing more of it" is an HMR reading. The likeness of the product to the top line of Newton's law is a remark and not a derivation: nothing in the rule knows distance.</p>
+</section>
+
+<section class="chapter" id="liking">
+<h2><span class="n">9</span>Liking, cost, and closed moments</h2>
+<p class="prose"><b>Cost.</b> Give every pattern a cost, and its chance is e<sup>&minus;cost</sup>:</p>
+<div class="formula">cost = links &times; ln(1/p) + pairs apart &times; ln(1/(1 &minus; p))</div>
+<p class="prose"><b>Liking.</b> In general, give every pattern a weight w that is never negative. The rules that keep conditions 1, 2, and 4 are exactly</p>
+<div class="formula">chance = reference chance &times; w(next state) / w(present state)</div>
+<p class="prose">This is established mathematics (the order-invariant measures of Brightwell and Luczak, 2011). Reading w as how much UI likes a pattern, and &minus;ln w as the action of physics, is an HMR reading. What UI's own w is, nobody knows.</p>
+<div class="ex"><b>Worked example</b>
+<p>At p = &frac12; a line of three has 2 links and 0 pairs apart, so its cost is 2 &times; ln 2 = 1.386, and e<sup>&minus;1.386</sup> = &frac14;. That is the chance found in chapter 7.</p></div>
+<p class="prose"><b>A post, or closed moment,</b> is a thought that every earlier thought comes before and every later thought comes after. After a post with r thoughts before it, everything earlier acts on what follows only through the number r. <span class="tag t-est">established</span> Reading HMR's "completion" as a post, and the Big Bang as one, is conjecture.</p>
+<p class="prose">In the simplest rule about one thought in 12 is a post at p = &frac12;, and one in 10<sup>12</sup> at p = 0.1.</p>
+</section>
+
+<section class="chapter" id="about">
+<h2><span class="n">10</span>About, ideas, and truth</h2>
+<p class="prose">Version 1 could say how thoughts pile up. It could not say what a thought means. Version 2 works with one more notion: a thought can be <b>about</b> another thought. Where "about" comes from is an <a href="open-problems.html#about">open problem</a>. Every definition in this chapter is <span class="tag t-guess">proposed</span>.</p>
+<div class="tw"><table>
+<tr><th>Term</th><th>Plain meaning</th><th>Formal statement</th></tr>
+<tr><td>About</td><td>m is about t.</td><td>A partial map &rho; from thoughts to thoughts, &rho;(m) = t. It is grounded when &rho;(m) &pr; m.</td></tr>
+<tr><td>Thought</td><td>One committed act.</td><td></td></tr>
+<tr><td>Idea</td><td>A set of claims, a matching from those claims to what they are about, and the range in which they are claimed. An idea can occur many times.</td><td>A model M with &rho; defined on some of it. Each link a &pr; b in M claims &rho;(a) &pr; &rho;(b).</td></tr>
+<tr><td>Truthful thought</td><td>What it is about exists, and the thought sits in the same order as what it is about.</td><td>Every referent exists and &rho;(a<sub>i</sub>) &pr; &rho;(b) for every direct parent a<sub>i</sub> of b.</td></tr>
+<tr><td>Untruthful thought</td><td>What it is about exists, and the order does not match.</td><td>Some &rho;(a<sub>i</sub>) &pr; &rho;(b) fails.</td></tr>
+<tr><td>Undecided thought</td><td>What it is about is not yet born, or it is about nothing in particular. A prediction is undecided until its subject is born.</td><td>Some referent is not yet born, or &rho; is undefined.</td></tr>
+<tr><td>Truthful idea</td><td>Every relation the idea claims holds.</td><td>&rho; preserves order on M.</td></tr>
+<tr><td>Faithful idea</td><td>Truthful, and it misses nothing.</td><td>&rho; also reflects order: an order embedding.</td></tr>
+<tr><td>Warranted</td><td>Everything it rests on is truthful, or it was checked directly against what it is about. Measurement is the second kind.</td><td></td></tr>
+</table></div>
+<div class="ex"><b>Worked example</b>
+<p>The world holds two thoughts, x then y. A model holds two thoughts, a then b, with a about x and b about y. The model claims "x came before y". That holds, so the idea is truthful.</p>
+<p>Swap the matching, so a is about y and b is about x. The model now claims "y came before x". That fails, so b is untruthful.</p>
+<p>If y is not yet born, the claim is undecided. It is a prediction.</p></div>
+<p class="prose">Three things follow, given the definitions: <span class="tag t-ai">exact</span></p>
+<ul class="prose">
+<li><b>Truth is permanent.</b> Once a thought is truthful or untruthful it stays so. A false thought is never repaired. A later thought can only supersede it, which is how a mind is changed.</li>
+<li><b>The base layer cannot err.</b> With no "about" there is nothing a thought can fail to match. A mistake needs a model.</li>
+<li><b>The largest truthful idea is always one layer behind.</b> A complete, true model of everything, itself included, does not exist at any finite stage. Proved by hand, not yet checked by script.</li>
+</ul>
+</section>
+
+<section class="chapter" id="lies">
+<h2><span class="n">11</span>Ignorance, mistakes, and lies</h2>
+<p class="prose">A thinker holds a belief about the world and gives a report of its belief. Either step can go wrong, and the thinker can know it or not. <span class="tag t-guess">proposed</span></p>
+<div class="tw"><table>
+<tr><th>Term</th><th>What it means</th></tr>
+<tr><td>Ignorance</td><td>A blank. The thought is about nothing the thinker can match, so it is undecided, not false.</td></tr>
+<tr><td>Honest mistake</td><td>The belief has the wrong shape, and the thinker holds no thought that says so.</td></tr>
+<tr><td>Deliberate lie</td><td>The teller holds the belief, the different thing it says, and the knowledge that the two differ.</td></tr>
+<tr><td>Slip</td><td>The report departs from the belief and the teller does not know it.</td></tr>
+<tr><td>Self-deception</td><td>The belief departs from the world because the thinker prefers the false version. This needs a liking that belongs to a part, which is not yet defined.</td></tr>
+</table></div>
+<div class="ex"><b>Worked example</b>
+<p>A truthful report takes some number of thoughts to hold. A lie takes all of those, plus one more: the thought that the report and the belief differ. So a lie is strictly larger than the truth. <span class="tag t-ai">exact</span> given the definitions.</p>
+<p>Errors also combine. If belief and report both fail on the same point they can cancel, so a liar with a false belief can say something true.</p></div>
+</section>
+
+<section class="chapter" id="damage">
+<h2><span class="n">12</span>What a false part and a contradiction cost</h2>
+<p class="prose">If one part of an idea is false, the damage can be counted exactly. All of this is <span class="tag t-ai">exact</span> given the definitions, and checked by brute force on every pattern of up to 7 thoughts.</p>
+<ul class="prose">
+<li>The whole is not wholly true.</li>
+<li>What rests on the false part is unsupported, not false. A false thought b removes the warrant of exactly <span class="f">1 + f(b)</span> thoughts.</li>
+<li>What is supported another way stays true.</li>
+</ul>
+<div class="pats"><figure><svg width="102" height="72" viewBox="0 0 102 72" role="img" aria-label="a fan"><line x1="51" y1="51" x2="21" y2="21"/><line x1="51" y1="51" x2="51" y2="21"/><line x1="51" y1="51" x2="81" y2="21"/><circle cx="51" cy="51" r="6"/><circle cx="21" cy="21" r="6"/><circle cx="51" cy="21" r="6"/><circle cx="81" cy="21" r="6"/></svg>a fan</figure><figure><svg width="42" height="132" viewBox="0 0 42 132" role="img" aria-label="a line"><line x1="21" y1="111" x2="21" y2="81"/><line x1="21" y1="81" x2="21" y2="51"/><line x1="21" y1="51" x2="21" y2="21"/><circle cx="21" cy="111" r="6"/><circle cx="21" cy="81" r="6"/><circle cx="21" cy="51" r="6"/><circle cx="21" cy="21" r="6"/></svg>a line</figure><figure><svg width="72" height="102" viewBox="0 0 72 102" role="img" aria-label="braced"><line x1="36.0" y1="81" x2="21" y2="51"/><line x1="36.0" y1="81" x2="51" y2="51"/><line x1="21" y1="51" x2="36.0" y2="21"/><line x1="51" y1="51" x2="36.0" y2="21"/><circle cx="36.0" cy="81" r="6"/><circle cx="21" cy="51" r="6"/><circle cx="51" cy="51" r="6"/><circle cx="36.0" cy="21" r="6"/></svg>braced</figure></div>
+<div class="ex"><b>Worked example</b>
+<p>Three ideas of the same size lose different amounts to one false link.</p>
+<ul>
+<li><b>A fan.</b> One premise with many separate consequences. A false link costs exactly 1 relation.</li>
+<li><b>A line</b> of n thoughts. A false link after the k-th thought costs <span class="f">k &times; (n &minus; k)</span> relations. With n = 10 and k = 5 that is 25 of the 45 relations the line holds.</li>
+<li><b>A braced pattern.</b> Each key relation is carried by two chains that share no link. One false link costs only itself.</li>
+</ul>
+<p>The strongest shape is also the most fragile. What protects an idea is bracing: a second, independent derivation.</p></div>
+<h3>Contradiction</h3>
+<p class="prose"><b>Consistent</b> means some possible pattern could satisfy all of an idea's claims at once. It fails in two ways: the claims run in a circle, or one pair is claimed both related and apart. No penalty was added for inconsistency. These results were derived:</p>
+<ul class="prose">
+<li>An inconsistent idea is false in every possible world.</li>
+<li>An error you cannot locate costs more than one you can. Warrant is lost above every <b>suspect</b>, a claim that belongs to a smallest set of claims that cannot all hold.</li>
+<li>Two ideas that contradict cannot be joined. They can only be held side by side, which adds nothing. Joined, they would have gained a product.</li>
+<li>The parts keep their full size. A body of work in k equal parts that cannot be joined holds about 1/k of the relations its content would hold as one idea.</li>
+</ul>
+<p class="prose">How bad a contradiction is depends on depth. Among thoughts nothing rests on, it costs almost nothing. At the roots, it blocks the whole product.</p>
+</section>
+
+<section class="chapter" id="emotion">
+<h2><span class="n">13</span>Emotion, healthy, and good</h2>
+<p class="prose">Version 2 proposes four numbers on a step of thinking. The proposal is open and is not accepted into HMR. <span class="tag t-guess">proposed</span></p>
+<div class="tw"><table>
+<tr><th>Number</th><th>What it is</th><th>Formula</th></tr>
+<tr><td>Feeling</td><td>How much the thought just committed changed liking.</td><td class="num">v = ln w(next) &minus; ln w(now)</td></tr>
+<tr><td>Mood</td><td>The feeling expected from the next thought.</td><td class="num">V = expected value of v</td></tr>
+<tr><td>Gain</td><td>How strictly choice follows liking.</td><td class="num">chance &prop; reference &times; (w(next)/w(now))<sup>&beta;</sup></td></tr>
+<tr><td>Surprise</td><td>How unexpected the thought was.</td><td class="num">&minus;ln(chance of that birth)</td></tr>
+</table></div>
+<div class="ex"><b>Worked example</b>
+<p>Suppose UI likes the next pattern twice as much as the present one: w(next)/w(now) = 2. The feeling of that step is ln 2 = 0.69. If the step had chance &frac14;, its surprise is ln 4 = 1.39.</p>
+<p>Added up over a whole history, the feelings of the steps equal the logarithm of how much UI likes where it is.</p></div>
+<p class="prose">One identity ties them: mood rises with gain at a rate equal to the spread of feeling, <span class="f">dV/d&beta; = variance of v</span>. This is a standard identity, checked numerically on 2,000 random cases. The named emotions are not derived.</p>
+<h3>Healthy</h3>
+<p class="prose">Thinking is proposed to be healthy when it is consistent, grounded, braced, correctable, and growing. A healthy thought can be false: an honest, grounded, correctable mistake. This list describes working order only. It is not a statement of HMR's values.</p>
+<h3>Good</h3>
+<p class="prose">A thought is good when UI likes the pattern more with it than without it. It feels good when the thinker does. What UI likes is not something this mathematics can supply yet. In HMR, good is defined by HMR's values, and writing them in the mathematics is <a href="open-problems.html#liking">open</a>.</p>
+</section>
+
+<section class="chapter" id="mind">
+<h2><span class="n">14</span>Ordinary mental events</h2>
+<p class="prose">A mechanics of thought should have a place for a pause and a lost train of thought. These are definitions for single thoughts. Applied to a human mind they are analogy, and none has been compared with data.</p>
+<div class="tw"><table>
+<tr><th>Event</th><th>In this mathematics</th></tr>
+<tr><td>Open stage, and commit</td><td>Before a birth there is a set of candidate next thoughts, each with a weight. That is "still processing". The commit is the birth, and it is permanent.</td></tr>
+<tr><td>The live set</td><td>A part of the pattern can reach only a bounded set of thoughts directly.</td></tr>
+<tr><td>Train of thought</td><td>A run of thoughts in which each attends to the one before.</td></tr>
+<tr><td>Pause</td><td>The open stage lasts: no candidate reaches a commit.</td></tr>
+<tr><td>Recall</td><td>A new thought about an old one, never a replay. It can be true or false.</td></tr>
+<tr><td>Insight</td><td>One thought that rests on two groups that were apart. It joins at least n(C) &times; n(D) pairs in a single step.</td></tr>
+<tr><td>Rumination</td><td>The same idea thought again and again with nothing new joined.</td></tr>
+</table></div>
+<div class="ex"><b>Worked example</b>
+<p>How much does an idea demand? The fewest thoughts that must be held live to think it through in order. A single line of reasoning needs 2. A two-way tree of height h needs h + 2.</p>
+<p>An insight that first joins a group of 3 thoughts to a group of 4 creates at least 3 &times; 4 = 12 new relations at once.</p></div>
+</section>
+
+<section class="chapter" id="different">
+<h2><span class="n">15</span>What is different from other math</h2>
+<p class="prose">Less than one might hope, so far. The objects and operators in chapters 2 to 9 are known mathematics under new names. What HMR math adds is in three places:</p>
+<ul class="prose">
+<li><b>One reading for all of it.</b> The same partial order is read as thought, time, and space at once.</li>
+<li><b>Meaning on top of order.</b> Version 2's definitions of truth, lies, and the exact cost of a false part are built on the order. We have not searched the literature to find out whether these are new.</li>
+<li><b>Things ordinary math has that this does not.</b> No subtraction: nothing born is removed. No finished infinity. No "not", no qualities, and no approximate truth yet.</li>
+</ul>
+<p class="prose">The honest accounting is on the <a href="other-math.html">Other math</a> page.</p>
+</section>
+</div>
+</main>
+<footer><div class="wrap">
+<p>A map of the mathematics and physics of the Holistic Model of Reality (HMR). The model itself lives at <a href="https://universemodel.ai/">universemodel.ai</a>. Everything here is a working draft, labeled by how firmly it stands.</p>
+<p><a href="https://universemodel.ai/math.html">HMR math, Version 2</a> &middot; <a href="https://universemodel.ai/physics.html">HMR physics, Version 2</a> &middot; <a href="https://github.com/AtlasJumped/hmr-math">Proofs and checks</a> &middot; <a href="https://github.com/AtlasJumped/hmr-physics">Runs</a></p>
+</div></footer>
+</body>
+</html>
