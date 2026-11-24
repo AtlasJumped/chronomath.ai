@@ -56,8 +56,8 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 /* type */
 h1,h2,h3,h4{color:var(--navy);letter-spacing:-.022em;margin:0;line-height:1.2}
 h1{font-size:clamp(1.9rem,4.2vw,2.9rem);font-weight:750}
-h2{font-size:clamp(1.35rem,2.6vw,1.8rem);font-weight:700;margin-top:2.2em}
-h3{font-size:1.14rem;font-weight:650;margin-top:1.6em}
+h2{font-size:clamp(1.35rem,2.6vw,1.8rem);font-weight:700;margin:2.2em 0 .6em}
+h3{font-size:1.14rem;font-weight:650;margin:1.6em 0 .4em}
 h4{font-size:1rem;font-weight:650;margin-top:1.2em}
 p{margin:.75em 0}
 .lede{font-size:1.16rem;color:var(--soft);max-width:62ch}
@@ -67,7 +67,7 @@ main section{padding:8px 0}
 main{padding-bottom:64px}
 .prose{max-width:74ch}
 .small{font-size:.92rem;color:var(--soft)}
-code,.f{font-family:var(--mono);font-size:.93em;background:var(--mist);border:1px solid var(--line);border-radius:6px;padding:.08em .38em;white-space:nowrap}
+code,.f{font-family:var(--mono);font-size:.93em;background:var(--mist);border:1px solid var(--line);border-radius:6px;padding:.08em .38em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
 .formula{font-family:var(--mono);font-size:.97rem;background:var(--mist);border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin:12px 0;overflow-x:auto;white-space:nowrap}
 ul,ol{padding-left:1.25em}
 li{margin:.3em 0}

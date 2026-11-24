@@ -196,7 +196,7 @@
       if (exp) {
         exp.addEventListener('click', function () {
           var out = $('#draft-out');
-          out.hidden = false;
+          $('#draft-outwrap').hidden = false;
           out.value = JSON.stringify(store.get(), null, 2);
           out.focus();
           out.select();

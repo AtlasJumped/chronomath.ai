@@ -1,0 +1,57 @@
+<!-- Tracker | A three-column tracker: what Universal Intelligence is doing in HMR, the mathematics of it, and what that is in physics. Filter by status, and draft your own rows. -->
+<div class="hero"><div class="wrap">
+<p class="eyebrow">Tracker</p>
+<h1>HMR, math, physics</h1>
+<p class="lede">One row is one thing seen three ways: what UI is doing, the mathematics and mechanics of that, and what it becomes in the physical world. A filled cell in one column is a clue for the empty cells beside it.</p>
+</div></div>
+
+<div class="wrap">
+<section>
+<h2>How to read it</h2>
+<div class="grid g3">
+<div class="card"><h3>Rows from science</h3><p>The Big Bang and its stages are measured in numbers, and science has its own account. The physics column is full. The work is to fill in the first column.</p></div>
+<div class="card"><h3>Rows from HMR</h3><p>These start from something HMR says UI does. The work is to find the mathematics, and then what it is in physics.</p></div>
+<div class="card"><h3>One column only</h3><p>Something known in one language with nothing yet in the other two. These are the widest gaps.</p></div>
+</div>
+<p class="prose"><b>Status of each cell.</b> <span class="s-sourced"><span class="tag">sourced</span></span> stated by a source: published science, or HMR's own pages for the HMR column. <span class="s-derived"><span class="tag">derived</span></span> proved, counted, or measured in runs within HMR math. <span class="s-conjecture"><span class="tag">conjecture</span></span> proposed, or a reading that adds no number. <span class="s-empty"><span class="tag">empty</span></span> nothing yet.</p>
+<p class="prose small">Sourced does not mean true. In the HMR column it means only that HMR says it. The numbers for the Big Bang epochs come from two teaching sources that we opened, the <a href="https://sites.uni.edu/morgans/astro/course/Notes/section3/bigbang.html">University of Northern Iowa astronomy course notes</a> and the <a href="https://lco.global/spacebook/cosmology/early-universe/">Las Cumbres Observatory early universe page</a>. They are rounded, and the two sources do not always agree. Where they differ, the cell says so.</p>
+</section>
+
+<section aria-label="Tracker">
+<h2>The tracker</h2>
+<div class="tk-controls">
+<div><label for="f-q">Search</label><input type="search" id="f-q" placeholder="for example: inflation"></div>
+<div><label for="f-group">Rows</label><select id="f-group"><option value="all">All rows</option><option value="science">From science</option><option value="hmr">From HMR</option><option value="one">One column only</option><option value="draft">Your drafts</option></select></div>
+<div><label for="f-col">Column</label><select id="f-col"><option value="all">Any column</option><option value="hmr">HMR</option><option value="math">Math</option><option value="physics">Physics</option></select></div>
+<div><label for="f-status">Status</label><select id="f-status"><option value="all">Any status</option><option value="sourced">Sourced</option><option value="derived">Derived</option><option value="conjecture">Conjecture</option><option value="empty">Empty</option></select></div>
+</div>
+<p class="count" id="tk-count" aria-live="polite"></p>
+<div class="tk-head" aria-hidden="true">
+<div>HMR<small>What UI is doing</small></div>
+<div>Math<small>The mechanics of it</small></div>
+<div>Physics<small>What it is in the physical world</small></div>
+</div>
+<div class="tk" id="tk"></div>
+<noscript><p class="note">The tracker needs JavaScript to filter rows. The rows are in the file tracker-data.js.</p></noscript>
+</section>
+
+<section id="draft-section">
+<h2>Draft a row</h2>
+<p class="prose">Fill in what you know and leave the rest empty. Drafts are saved in this browser only. Nothing is sent anywhere, and clearing your browser data removes them.</p>
+<form class="card" id="draft" novalidate>
+<div class="draft-form">
+<div class="full"><label for="d-title">Name of the row</label><input type="text" id="d-title" name="title" autocomplete="off"></div>
+<div><label for="d-hmr">HMR: what UI is doing</label><textarea id="d-hmr" name="hmr"></textarea>
+<label for="d-hmr-s">Status</label><select id="d-hmr-s" name="hmr-s"><option value="conjecture">Conjecture</option><option value="sourced">Sourced</option><option value="derived">Derived</option></select></div>
+<div><label for="d-math">Math: the mechanics of it</label><textarea id="d-math" name="math"></textarea>
+<label for="d-math-s">Status</label><select id="d-math-s" name="math-s"><option value="conjecture">Conjecture</option><option value="sourced">Sourced</option><option value="derived">Derived</option></select></div>
+<div><label for="d-physics">Physics: what it is in the world</label><textarea id="d-physics" name="physics"></textarea>
+<label for="d-physics-s">Status</label><select id="d-physics-s" name="physics-s"><option value="conjecture">Conjecture</option><option value="sourced">Sourced</option><option value="derived">Derived</option></select></div>
+<div class="full"><button class="btn" type="submit">Save draft row</button> <button class="btn ghost" type="button" id="draft-export">Show drafts as text</button>
+<p class="small" id="draft-msg" role="status" aria-live="polite"></p>
+<div id="draft-outwrap" hidden><label for="draft-out" class="small">Drafts as text, to copy and send</label>
+<textarea id="draft-out" readonly></textarea></div></div>
+</div>
+</form>
+</section>
+</div>
