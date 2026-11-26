@@ -61,10 +61,10 @@ def header(page):
 FOOT = (
     '<footer><div class="wrap">\n'
     '<p>A map of the mathematics and physics of the Holistic Model of Reality (HMR). '
-    'The model itself lives at <a href="https://universemodel.ai/">universemodel.ai</a>. '
+    ''
     'Everything here is a working draft, labeled by how firmly it stands.</p>\n'
-    '<p><a href="https://universemodel.ai/math.html">HMR math, Version 2</a> &middot; '
-    '<a href="https://universemodel.ai/physics.html">HMR physics, Version 2</a> &middot; '
+    '<p>'
+    ''
     '<a href="https://github.com/AtlasJumped/hmr-math">Proofs and checks</a> &middot; '
     '<a href="https://github.com/AtlasJumped/hmr-physics">Runs</a></p>\n'
     '</div></footer>\n'
