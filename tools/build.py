@@ -38,6 +38,9 @@ def ver(name):
     return hashlib.sha1((ROOT / name).read_bytes()).hexdigest()[:8]
 
 
+CAPTION = '<div class="elv8-cap" data-elv8-cap role="note" style="font:13px/1.45 system-ui,-apple-system,\'Segoe UI\',Roboto,sans-serif;text-align:center;padding:6px 12px;background:#fffdf8;color:#4a4760;border-bottom:1px solid #e8e3d6;position:relative;z-index:30">This website is owned by the person who owns this website. <a href="https://elevat.ing/" style="color:inherit;font-weight:700">elevat.ing</a></div>\n'
+
+
 def header(page):
     links = []
     for href, label in NAV:
@@ -47,6 +50,7 @@ def header(page):
     drop = "".join(f'<a href="{h}">{l}</a>' for h, l in PHYS)
     return (
         '<a class="skip" href="#main">Skip to content</a>\n'
+        + CAPTION +
         '<header class="site-head"><div class="wrap">\n'
         '<a class="brand" href="index.html"><span class="lg" aria-hidden="true"></span><span>HMR Math</span></a>\n'
         '<button class="menu" type="button" aria-expanded="false" aria-controls="nav">Menu</button>\n'
