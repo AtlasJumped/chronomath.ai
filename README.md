@@ -26,7 +26,7 @@ Static HTML, one stylesheet, one script, no framework. Page bodies live in `src/
 
 - The live Version 2 pages: the HMR source pages
 - Proofs, checks, and runs: [HMR Math](https://github.com/AtlasJumped/hmr-math) and [HMR Physics](https://github.com/AtlasJumped/hmr-physics)
-- History only: the first attempt, from late 2025, is kept at [Leos-HMR](https://github.com/AtlasJumped/Leos-HMR). Its own README says, "Much of it is garbage AI circa late 2025." Nothing on this site is taken from it.
+- History only: the first attempt, from late 2025, is kept at [the first-attempt repository](https://github.com/AtlasJumped/Leos-HMR). Its own README says, "Much of it is garbage AI circa late 2025." Nothing on this site is taken from it.
 
 ## Status
 

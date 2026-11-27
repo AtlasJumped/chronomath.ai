@@ -41,7 +41,7 @@ def ver(name):
 CAPTION = '<div class="elv8-cap" data-elv8-cap role="note" style="font:13px/1.45 system-ui,-apple-system,\'Segoe UI\',Roboto,sans-serif;text-align:center;padding:6px 12px;background:#fffdf8;color:#4a4760;border-bottom:1px solid #e8e3d6;position:relative;z-index:30">This website is owned by the person who owns this website. <a href="https://elevat.ing/" style="color:inherit;font-weight:700">elevat.ing</a></div>\n'
 
 
-def header(page):
+def header(page, cap=CAPTION):
     links = []
     for href, label in NAV:
         cur = ' aria-current="page"' if href == page else ""
@@ -50,7 +50,7 @@ def header(page):
     drop = "".join(f'<a href="{h}">{l}</a>' for h, l in PHYS)
     return (
         '<a class="skip" href="#main">Skip to content</a>\n'
-        + CAPTION +
+        + cap +
         '<header class="site-head"><div class="wrap">\n'
         '<a class="brand" href="index.html"><span class="lg" aria-hidden="true"></span><span>HMR Math</span></a>\n'
         '<button class="menu" type="button" aria-expanded="false" aria-controls="nav">Menu</button>\n'
@@ -71,8 +71,29 @@ FOOT = (
     ''
     '<a href="https://github.com/AtlasJumped/hmr-math">Proofs and checks</a> &middot; '
     '<a href="https://github.com/AtlasJumped/hmr-physics">Runs</a></p>\n'
+    '<p>Key partner: <a href="https://claudebomb.com/">claudebomb.com</a>, the free, open prompt bank.</p>\n'
     '</div></footer>\n'
 )
+
+# Scripts after the footer (design picker, shared dock, audience paths). The
+# shared dock is updated by the dock team directly in the built pages, so the
+# build keeps whatever script lines a page already has after its footer.
+TAIL = (
+    '<script src="designs.js" defer></script>\n'
+    '<script src="hmr-dock.js?v=6.4.1" data-site="chronomath.ai" data-design="#dp-btn" data-design-panel="#dp-panel" defer></script>\n'
+    '<script src="https://hmrfamily.life/x/hmr-aud.js?v=1" defer></script>\n'
+)
+
+
+def kept(name):
+    """Caption line and post-footer scripts of the page as it is now, if built before."""
+    out = ROOT / name
+    if not out.exists():
+        return CAPTION, TAIL
+    old = out.read_text()
+    cap = next((l + "\n" for l in old.split("\n") if "data-elv8-cap" in l), CAPTION)
+    tail = old.split("</footer>\n", 1)[1].split("</body>", 1)[0] if "</footer>\n" in old else TAIL
+    return cap, tail
 
 
 def build():
@@ -89,6 +110,7 @@ def build():
         extra = ""
         if name == "tracker.html":
             extra = f'<script src="tracker-data.js?v={ver("tracker-data.js")}" defer></script>\n'
+        cap, tail = kept(name)
         html = (
             '<!DOCTYPE html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
             '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
@@ -100,7 +122,7 @@ def build():
             '<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700;750&display=swap" rel="stylesheet">\n'
             f'<link rel="stylesheet" href="style.css?v={css}">\n'
             f'{extra}<script src="site.js?v={js}" defer></script>\n'
-            '</head>\n<body>\n' + header(name) + '<main id="main">\n' + text + '</main>\n' + FOOT +
+            '</head>\n<body>\n' + header(name, cap) + '<main id="main">\n' + text + '</main>\n' + FOOT + tail +
             '</body>\n</html>\n'
         )
         (ROOT / name).write_text(html)
