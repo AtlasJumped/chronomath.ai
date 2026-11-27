@@ -80,7 +80,7 @@ FOOT = (
 # build keeps whatever script lines a page already has after its footer.
 TAIL = (
     '<script src="designs.js" defer></script>\n'
-    '<script src="hmr-dock.js?v=6.9.1" data-site="chronomath.ai" data-design="#dp-btn" data-design-panel="#dp-panel" defer></script>\n'
+    '<script src="hmr-dock.js?v=6.10.2" data-site="chronomath.ai" data-design="#dp-btn" data-design-panel="#dp-panel" defer></script>\n'
     '<script src="https://hmrfamily.life/x/hmr-aud.js?v=1" defer></script>\n'
 )
 
